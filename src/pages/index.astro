@@ -1,15 +1,16 @@
 ---
+import Icon from 'astro-icon';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title='Desgn landing page'>
+	<Hero />
+
+	<section class="programmer container blur grid-sm">
+		<Icon name="programmer" width="400px" class="programmer-icon" alt="Programmer picture" aria-hidden="true" />
+	</section>
+
+	<Services />
+</BaseLayout>
