@@ -340,7 +340,7 @@ header {
 
 /* REVIEWS */
 .reviews-wrapper {
-  background-color: hsl(var(--bkg));
+  /* background-color: hsl(var(--bkg)); */
   margin: 0 calc(var(--size-fluid-2) * -1);
 }
 
